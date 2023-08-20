@@ -21,7 +21,11 @@ const ElevatorPitch = () => {
                 <motion.div variants={textVariant()}>
                     <h2 className={`${styles.sectionHeadText2 + " text-center"}`}>Elevator Pitch.</h2>
                 </motion.div>
-                <div className="text-center break-words pt-10 m-auto xl:8/12 lg:w-8/12 md:w-9/12 sm:w-10/12 xs:w-10/12 w-10/12">
+                <div className='m-10 flex justify-center flex-col'>
+                    <div className="mb-10 text-center"><b>Watch on Youtube: <a className="text-blue-500 hover:text-blue-700" target='_blank' href="https://www.youtube.com/embed/GMNi9f47Vsw">https://www.youtube.com/embed/GMNi9f47Vsw</a></b></div>
+                    <iframe width="853" className='m-auto' height="480" src="https://www.youtube.com/embed/GMNi9f47Vsw" title="Pitch Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                {/* <div className="text-center break-words pt-10 m-auto xl:8/12 lg:w-8/12 md:w-9/12 sm:w-10/12 xs:w-10/12 w-10/12">
                     <div className="elpoint">
                         <div className="elhead font-bold text-secondary">[NAME]</div>
                         <div className="elbody text-center">Akerele Quadri Ayomide.</div>
@@ -57,7 +61,7 @@ const ElevatorPitch = () => {
                         <div className="elbody text-justify">As a software engineer, I am confident that my dedication, proficiency, and passion for problem-solving make me the ideal candidate for this position. My track record of successful projects and positive outcomes, combined with my adaptability and strong communication skills, demonstrate that I am ready to take on new challenges and drive technological innovation within your organization. I am excited to contribute my expertise to a team that values innovation and excellence, and I am eager to make a significant impact by pushing the boundaries of software development in this role. You can count on me to bring enthusiasm, commitment, and a growth mindset to every project, ensuring exceptional results for your company.</div>
                         <br />
                     </div>
-                </div>
+                </div> */}
             </motion.div>
             <Foot/>
         </div>

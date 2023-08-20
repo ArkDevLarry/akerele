@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 
-import { HomePage, ElevatorPitch } from "./components";
+import { HomePage, ElevatorPitch, About } from "./components";
 
 function ScrollToTopOnRouteChange() {
   const { pathname } = useLocation();
@@ -21,6 +21,7 @@ const App = () => {
     
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about-akerele" element={<About />} />
         <Route path="/elevator-pitch" element={<ElevatorPitch />} />
       </Routes>
       <ScrollToTopOnRouteChange />
